@@ -1,0 +1,102 @@
+﻿<Page x:Class="ImageGallery.PageImage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ImageGallery"
+      mc:Ignorable="d" 
+      d:DesignHeight="619" d:DesignWidth="819"
+      Title="PageImage">
+
+    <Grid Background="White" Height="619" Width="819">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+                       
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="White">
+
+            <Button 
+                Height="30"
+                Width="50"
+                Margin="-759,3,0,0"
+                BorderThickness="0"
+                Name="back"
+                Click="back_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/back.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+            
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <Image
+                Name="Image"
+                Margin="0,10,0,0"
+                Width="719"
+                Stretch="Fill">
+                
+            </Image>
+            
+        </Grid>
+        
+        <Grid Grid.Row="2">
+
+            <Button 
+                Height="40"
+                Width="50"
+                Margin="-70,3,0,0"
+                BorderThickness="0"
+                Name="pasue"
+                Click="pasue_Click">
+                <Button.Background>
+                 <ImageBrush ImageSource="Images/pause.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button 
+                Height="40"
+                Width="50"
+                Margin="50,3,0,0"
+                BorderThickness="0"
+                Name="autoplay"
+                Click="autoplay_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/play.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button 
+                Height="35"
+                Width="38"
+                Margin="195,3,0,0"
+                BorderThickness="0"
+                Name="next"
+                Click="next_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/next.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button 
+                Height="35"
+                Width="35"
+                Margin="-230,3,0,0"
+                BorderThickness="0"
+                Name="previous"
+                Click="previous_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/backk2.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+        
+    </Grid>
+</Page>
